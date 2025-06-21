@@ -376,9 +376,10 @@ footer {
 
   .footer-links {
     justify-content: center;
-    flex-direction: row;
-    gap: 15px;
-    margin-top: 10px;
+    position: relative;
+    right: 15px;
+    gap: 5px;
+    margin-top: 1px;
   }
 
   .footer-brand {
@@ -386,6 +387,6 @@ footer {
   }
 
   .footer-links a {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
