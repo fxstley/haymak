@@ -302,22 +302,6 @@ footer {
     max-width: 100%;
   }
 
-  footer {
-    flex-direction: column;
-    text-align: center;
-    height: auto;
-    padding: 20px 10px;
-  }
-
-  .footer-links {
-    margin-top: 10px;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .footer-links a {
-    margin: 0;
-  }
 }
 
 /* Medium devices (Tablets) */
@@ -337,5 +321,71 @@ footer {
 
   .tool-card {
     flex: 1 1 45%;
+  }
+}
+
+footer {
+  background-color: #1c2d37;
+  padding: 20px 10px;
+  color: #76d1c4;
+  text-align: center;
+  font-family: 'Roman';
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.footer-brand {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #76d1c4;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #a8f0e0;
+}
+
+/* Responsive Footer for Mobile Devices */
+@media (max-width: 767px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links {
+    justify-content: center;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .footer-brand {
+    font-size: 16px;
+  }
+
+  .footer-links a {
+    font-size: 14px;
   }
 }
